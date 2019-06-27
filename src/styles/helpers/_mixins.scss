@@ -1,0 +1,13 @@
+@mixin position($justifyContent, $alignItems, $row, $padding: 10px) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    flex-direction: $row;
+    padding: $padding;
+}
+
+@mixin fontSpec($font, $size, $spacing: 1px) {
+    font-family: $font;
+    font-size: $size;
+    letter-spacing: $spacing;
+}

@@ -1,0 +1,18 @@
+@import './init/reset';
+@import './fonts/fonts';
+@import './components/header/header';
+@import './components/main/main';
+
+body {
+    font-family: CoreSansGExtraBold;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+hr {
+    border-top: 1px solid #f6f6f6;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
