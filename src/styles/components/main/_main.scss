@@ -2,31 +2,34 @@
 
 .main-top-container {
     @include position(space-between, center, column, 0);
+
+    margin-bottom: 35px;
+
     img {
         width: 100%;
     }
-}
 
-.main-top-title {
-    @include fontSpec(CoreSansGExtraBold, 16px);
-    padding: 15px;
-}
-
-.main-top-info {
-    @include fontSpec(OPTIKiteLight, 11px);
-    font-weight: bold;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.main-top-button {
-    @include fontSpec(CoreSansGExtraBold, 12px);
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #193359;
-    margin-top: 15px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 10px;
-    padding-right: 10px;
+    .main-top-title {
+        @include fontSpec(CoreSansGExtraBold, 16px);
+        padding: 15px;
+    }
+    
+    .main-top-info {
+        @include fontSpec(OPTIKiteLight, 11px);
+        font-weight: bold;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .main-top-button {
+        @include fontSpec(CoreSansGExtraBold, 12px);
+        color: rgba(255, 255, 255, 0.8);
+        background-color: #193359;
+        margin-top: 20px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

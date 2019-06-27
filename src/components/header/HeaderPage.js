@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import briefcaseIcon from '../../icons/briefcase-icon.svg';
+import briefcaseWhiteIcon from '../../icons/briefcase-icon-white.svg';
 // import imageOne from '../../icons/image-1.jpg';
 // import MainPage from '../main/MainPage';
 
 class HeaderPage extends Component {
     render() {
         return (
-            <header>
+            <header id="navbar">
                 <div className="top-headline">
                     <div className="eton-headline-text">ETON</div>
                     <div className="shopping-basket-headline-text">
@@ -20,7 +21,6 @@ class HeaderPage extends Component {
                     <div>ACCESSORIES</div>
                     <div>OUR WORLD</div>
                 </div>
-                {/* <MainPage /> */}
             </header>
         );
     }

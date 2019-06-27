@@ -1,16 +1,49 @@
 import React, { Component } from 'react';
 import imageOne from '../../icons/image-1.jpg';
+import HeadCollectionInfo from './HeadCollectionInfo';
+import CollectionInfo from './CollectionInfo';
 
 class MainPage extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            collectionList: [
+                {
+                    title: 'The Essentials',
+                    info: 'Curabitur blandit tempus porttitor',
+                    image: {
+                        data: imageOne,
+                        alt: 'test-one'
+                    }
+                },
+                {
+                    title: 'Closet No 6',
+                    info: 'Donec id elit non mi porta gravida at eget metus',
+                    image: {
+                        data: imageOne,
+                        alt: 'test-two'
+                    }
+                },
+                {
+                    title: 'Closet No 14',
+                    info: 'Euismod aenean inceqtos bibendum',
+                    image: {
+                        data: imageOne,
+                        alt: 'test-three'
+                    }
+                }
+            ]
+        };
+    }
+
     render() {
         return (
             <main>
-                <div className="main-top-container">
-                    <img src={imageOne} alt="test-one" />
-                    <label className="main-top-title">Spring / Summer 16</label>
-                    <label className="main-top-info">Maccenas sed diam eget risus varius blandit sit amet non magna. Maccenas sed diam eget risus varius blandit sit amet non magna.</label>
-                    <span className="main-top-button">EXPLORE COLLECTION</span>
-                </div>
+                <HeadCollectionInfo />
+                {this.state.collectionList.map((collection, index) => (
+                    <CollectionInfo key={index} collection={collection} />
+                ))}
             </main>
         );
     }

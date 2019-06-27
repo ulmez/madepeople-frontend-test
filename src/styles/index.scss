@@ -1,12 +1,15 @@
 @import './init/reset';
 @import './fonts/fonts';
 @import './components/header/header';
-@import './components/main/main';
+// @import './components/main/main';
+@import './components/main/index';
 
 body {
     font-family: CoreSansGExtraBold;
     font-size: 12px;
     letter-spacing: 1px;
+    margin-top: 80px;
+    // overflow-y: hidden;
 }
 
 hr {
@@ -16,3 +19,7 @@ hr {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+// ::-webkit-scrollbar { 
+//     display: none; 
+// }
