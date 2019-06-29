@@ -1,8 +1,8 @@
 @import './init/reset';
 @import './fonts/fonts';
 @import './components/header/header';
-// @import './components/main/main';
 @import './components/main/index';
+@import './components/footer/index';
 
 body {
     font-family: CoreSansGExtraBold;
