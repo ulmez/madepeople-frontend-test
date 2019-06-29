@@ -1,7 +1,7 @@
 .option-bar-container {
     font-family: CoreSansGLight;
     border-top: 2px solid #f6f6f6;
-    border-bottom: 2px solid #f6f6f6;
+    // border-bottom: 2px solid #f6f6f6;
     @include position(center, center, row, 0);
     label {
         padding-left: 10px;

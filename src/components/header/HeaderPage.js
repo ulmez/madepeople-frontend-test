@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import briefcaseIcon from '../../icons/briefcase-icon.svg';
 import briefcaseWhiteIcon from '../../icons/briefcase-icon-white.svg';
-// import imageOne from '../../icons/image-1.jpg';
-// import MainPage from '../main/MainPage';
 
 class HeaderPage extends Component {
     render() {
