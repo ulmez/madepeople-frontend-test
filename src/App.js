@@ -3,6 +3,7 @@ import HeaderPage from './components/header/HeaderPage';
 import MainPage from './components/main/MainPage';
 import OptionBarPage from './components/optionBar/OptionBarPage';
 import SocialMediaPage from './components/socialMedia/SocialMediaPage';
+import AboutUsPage from './components/aboutUs/AboutUsPage';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <MainPage />
         <OptionBarPage />
         <SocialMediaPage />
+        <AboutUsPage />
       </div>
     );
   }

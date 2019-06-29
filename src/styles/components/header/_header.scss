@@ -1,5 +1,3 @@
-@import '../../helpers/mixins';
-
 .top-headline {
     @include position(space-between, center, row);
     font-weight: bold;
