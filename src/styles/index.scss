@@ -13,13 +13,17 @@ body {
     // overflow-y: hidden;
 }
 
-hr {
-    border-top: 1px solid #f6f6f6;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 10px;
-    margin-right: 10px;
+input:focus {
+    outline: none !important;
 }
+
+// hr {
+//     border-top: 1px solid #f6f6f6;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//     margin-left: 10px;
+//     margin-right: 10px;
+// }
 
 // ::-webkit-scrollbar { 
 //     display: none; 

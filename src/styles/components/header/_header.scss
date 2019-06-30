@@ -1,6 +1,14 @@
+.top-headline-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
 .top-headline {
-    @include position(space-between, center, row);
-    font-weight: bold;
+    @include position(space-between, center, row, 0);
+    // font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f6f6f6;
 }
 
 .eton-headline-text {
@@ -17,9 +25,117 @@
     @include position(space-between, center, row);
 }
 
+.menu-container {
+    @include position(flex-start, flex-start, row, 0);
+    padding-top: 15px;
+    padding-left: 10px;
+    div {
+        padding-right: 15px;
+        @include fontSpec(CoreSansGLight, 12px);
+        div {
+            padding-bottom: 4px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .menu-sub-title {
+            @include fontSpec(CoreSansGExtraBold, 12px);
+            padding-bottom: 10px;
+            color: rgba(255, 255, 255, 0.85);
+        }
+        .menu-spacer {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.top-search-field {
+    @include position(flex-start, flex-start, row, 0);
+    padding-left: 10px;
+    padding-right: 10px;
+    // padding-top: 10px;
+    label {
+        @include position(center, center, row, 0);
+        background-color: #132747;
+        color: rgba(255, 255, 255, 0.85);
+        height: 30px;
+        width: 40px;
+        box-sizing: border-box;
+        // border: 1px solid red;
+        i {
+            font-size: 20px;
+        }
+    }
+    input[type=text] {
+        background-color: #132747;
+        height: 30px;
+        width: 100%;
+        border-width: 0px;
+        box-sizing: border-box;
+        // border: 1px solid green;
+    }
+}
+
+// #menuMainContainer {
+//     // padding-top: 15px;
+//     padding-bottom: 15px;
+// }
+
 #navbar {
     position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
+}
+
+.active-menu-design {
+    background-color: #1a3459;
+    color: white;
+}
+
+.start-height {
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.transition-height {
+    max-height: 280px;
+    overflow: hidden;
+    // height: auto;
+    // overflow: hidden;
+    // background-color: #dedede;
+    -moz-transition: max-height 0.5s ease;
+    -webkit-transition: max-height 0.5s ease;
+    -o-transition: max-height 0.5s ease;
+    transition: max-height 0.5s ease;
+}
+
+.transition-height-search-field {
+    max-height: 30px;
+    overflow: hidden;
+    // height: auto;
+    // overflow: hidden;
+    // background-color: #dedede;
+    -moz-transition: max-height 0.7s ease;
+    -webkit-transition: max-height 0.7s ease;
+    -o-transition: max-height 0.7s ease;
+    transition: max-height 0.7s ease;
+}
+
+.transparency {
+    color: rgba(255, 255, 255, 0.15);
+}
+
+.less-transparency {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.padding-bottom-fix {
+    padding-bottom: 15px;
+}
+
+.padding-top-fix {
+    padding-top: 10px;
+}
+
+.bottom-border-transparency {
+    border-bottom: 1px solid rgba($color: #f6f6f6, $alpha: 0.2);
 }

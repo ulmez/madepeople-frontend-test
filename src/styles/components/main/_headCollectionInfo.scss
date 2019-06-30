@@ -14,7 +14,7 @@
     
     .main-top-info {
         @include fontSpec(OPTIKiteLight, 11px);
-        font-weight: bold;
+        // font-weight: bold;
         text-align: center;
         padding-left: 15px;
         padding-right: 15px;
@@ -23,7 +23,7 @@
     .main-top-button {
         @include fontSpec(CoreSansGExtraBold, 12px);
         color: rgba(255, 255, 255, 0.8);
-        background-color: #193359;
+        background-color: #1a3459;
         margin-top: 20px;
         padding-top: 7px;
         padding-bottom: 7px;
