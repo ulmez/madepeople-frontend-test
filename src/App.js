@@ -18,10 +18,6 @@ class App extends Component {
   }
 
   unCheckMenu(e) {
-    console.log(((e.target.parentNode).parentNode).parentNode.id);
-    console.log(e.target.parentNode.id);
-    console.log((e.target.parentNode).parentNode.id);
-    console.log(e.target.id);
     if(
       (e.target.parentNode.id === "menuHeadlineContainer" ||
       ((e.target.parentNode).parentNode).parentNode.id === "menuMainContainer" ||
@@ -30,13 +26,14 @@ class App extends Component {
       (e.target.parentNode).parentNode.id === "topSearchField") &&
       (e.target.id !== "accessories" && e.target.id !== "ourWorld")
     ) {
-      console.log("Clicked inside");
       this.setState({
         activeMenu: true
       });
     }
     else {
-      console.log("Clicked outside");
+      const searchBoxTextField = document.getElementById("searchBoxTextField");
+      searchBoxTextField.value = "";
+      
       this.setState({
         activeMenu: false
       });

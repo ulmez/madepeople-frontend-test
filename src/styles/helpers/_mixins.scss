@@ -11,3 +11,9 @@
     font-size: $size;
     letter-spacing: $spacing;
 }
+
+@mixin element-color($color) {
+    background-color: $color;
+    -webkit-mask-image: url(../icons/briefcase-icon.svg);
+    mask-image: url(../icons/briefcase-icon.svg);
+}

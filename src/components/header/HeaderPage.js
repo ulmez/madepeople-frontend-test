@@ -1,43 +1,24 @@
 import React, { Component } from 'react';
-import briefcaseIcon from '../../icons/briefcase-icon.svg';
-import briefcaseWhiteIcon from '../../icons/briefcase-icon-white.svg';
 
 class HeaderPage extends Component {
-    constructor(props) {
-        super(props);
-
-        // this.state = {
-        //     activeMenu: false
-        // };
-
-        this.getMenu = this.getMenu.bind(this);
-    }
-
-    getMenu() {
-        this.setState({
-            activeMenu: true
-        });
-    }
-
     render() {
-        console.log(this.props.activeMenu);
         return (
             <header id="navbar">
                 <div className={"top-headline-container " + (this.props.activeMenu ? 'active-menu-design' : '')}>
                     <div className={"top-headline " + (this.props.activeMenu ? 'less-transparency bottom-border-transparency' : '')}>
                         <div className="eton-headline-text">ETON</div>
                         <div className="shopping-basket-headline-text">
-                            <img src={this.props.activeMenu ? briefcaseWhiteIcon : briefcaseIcon} alt="briefcase-icon" />
+                            <label className={this.props.activeMenu ? 'briefcase-icon-white' : 'briefcase-icon-black'}></label>
                             <label>0 SEK</label>
                         </div>
                     </div>
                 </div>
                 <div id="topSearchField" className={"top-search-field " + (this.props.activeMenu ? 'active-menu-design padding-top-fix transition-height-search-field' : 'start-height')}>
                     <label><i className="fa fa-search"></i></label>
-                    <input type="text" />
+                    <input id="searchBoxTextField" type="text" />
                 </div>
                 <div id="menuHeadlineContainer" className={"menu-headline " + (this.props.activeMenu ? 'active-menu-design less-transparency' : '')}>
-                    <div id="shirts" onClick={this.getMenu}>SHIRTS</div>
+                    <div id="shirts">SHIRTS</div>
                     <div id="accessories" className={this.props.activeMenu ? 'transparency' : ''}>ACCESSORIES</div>
                     <div id="ourWorld" className={this.props.activeMenu ? 'transparency' : ''}>OUR WORLD</div>
                 </div>

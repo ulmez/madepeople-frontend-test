@@ -1,10 +1,4 @@
 import React, { Component } from 'react';
-// import solidBlackDressShirt from '../../icons/solid-black-dress-shirt.jpg';
-// import blueIndigoCasualShirt from '../../icons/blue-indigo-casual-shirt.jpg';
-// import johnClarkPrintShirt from '../../icons/john-clark-print-shirt.jpg';
-// import redMicroDotsShirt from '../../icons/red-micro-dots-shirt.jpg';
-// import navyCatPrintShirt from '../../icons/navy-cat-print-shirt.jpg';
-// import lightBlueTwillShirt from '../../icons/light-blue-twill-shirt.jpg';
 
 class ShirtPage extends Component {
     render() {

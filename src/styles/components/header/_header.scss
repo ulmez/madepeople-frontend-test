@@ -63,11 +63,25 @@
     }
     input[type=text] {
         background-color: $dark-blue-background-color;
+        color: $white-text-transparency;
         height: 30px;
         width: 100%;
         border-width: 0px;
         box-sizing: border-box;
     }
+}
+
+.briefcase-icon-black {
+    @include element-color(#000000);
+    width: 32px;
+    height: 14px;
+}
+
+.briefcase-icon-white {
+    @include element-color(#ffffff);
+    opacity: 0.85;
+    width: 32px;
+    height: 14px;
 }
 
 #navbar {

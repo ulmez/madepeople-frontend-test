@@ -101,25 +101,7 @@ class MainPage extends Component {
             ]
         };
     }
-
-
-    // <img src={solidBlackDressShirt} alt="solid-black-dress-shirt" />
-    //             </div>
-    //             <div>
-    //                 <img src={blueIndigoCasualShirt} alt="blue-indigo-casual-shirt" />
-    //             </div>
-    //             <div>
-    //                 <img src={johnClarkPrintShirt} alt="john-clark-print-shirt" />
-    //             </div>
-    //             <div>
-    //                 <img src={redMicroDotsShirt} alt="red-micro-dots-shirt" />
-    //             </div>
-    //             <div>
-    //                 <img src={navyCatPrintShirt} alt="navy-cat-print-shirt" />
-    //             </div>
-    //             <div>
-    //                 <img src={lightBlueTwillShirt} alt="light-blue-twill-shirt" />
-
+    
     render() {
         return (
             <main>
