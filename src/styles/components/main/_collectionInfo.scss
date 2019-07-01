@@ -1,22 +1,17 @@
 .main-collection-container {
     @include position(space-between, center, column, 0);
-
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 27px;
-
     img {
         width: 100%;
     }
-
     .main-collection-title {
         @include fontSpec(CoreSansGExtraBold, 16px);
         padding-top: 15px;
     }
-    
     .main-collection-info {
         @include fontSpec(OPTIKiteLight, 11px);
-        // font-weight: bold;
         text-align: center;
         padding-left: 15px;
         padding-right: 15px;

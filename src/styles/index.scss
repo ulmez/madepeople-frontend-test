@@ -1,5 +1,6 @@
 @import './init/reset';
 @import './fonts/fonts';
+@import './helpers/variables';
 @import './helpers/mixins';
 @import './components/header/header';
 @import './components/main/index';
@@ -10,21 +11,8 @@ body {
     font-size: 12px;
     letter-spacing: 1px;
     margin-top: 80px;
-    // overflow-y: hidden;
 }
 
 input:focus {
-    outline: none !important;
+    outline: none;
 }
-
-// hr {
-//     border-top: 1px solid #f6f6f6;
-//     margin-top: 0;
-//     margin-bottom: 0;
-//     margin-left: 10px;
-//     margin-right: 10px;
-// }
-
-// ::-webkit-scrollbar { 
-//     display: none; 
-// }

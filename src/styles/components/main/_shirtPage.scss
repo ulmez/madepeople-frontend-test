@@ -17,9 +17,7 @@
             text-align: left;
         }
         .shirt-fit-price {
-            font-size: 9px;
-            // font-weight: bold;
-            font-family: CoreSansGLight;
+            @include fontSpec(CoreSansGLight, 9px);
             padding-top: 2px;
         }
     }
