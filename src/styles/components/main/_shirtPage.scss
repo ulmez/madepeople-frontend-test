@@ -3,22 +3,25 @@
     flex-wrap: wrap;
     padding-left: 8px;
     padding-right: 8px;
+    padding-bottom: 45px;
     div {
         flex: 0 50%;
         text-align: center;
         padding: 8px;
         box-sizing: border-box;
+        @media (min-width: 768px) {
+            flex: 0 33%;
+        }
         img {
             width: 100%;
         }
         label {
-            font-size: 10px;
+            font-size: 12px;
             display: flex;
             text-align: left;
         }
         .shirt-fit-price {
-            @include fontSpec(CoreSansGLight, 9px);
-            padding-top: 2px;
+            @include fontSpec(FuturaPTBook, 10px, 0);
         }
     }
 }

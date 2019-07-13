@@ -5,17 +5,20 @@
         width: 100%;
     }
     .main-top-title {
-        @include fontSpec(CoreSansGExtraBold, 16px);
+        @include fontSpec(FuturaPTDemi, 18px);
         padding: 15px;
     }
     .main-top-info {
-        @include fontSpec(OPTIKiteLight, 11px);
+        @include fontSpec(Garamond, 11px);
+        font-weight: bold;
         text-align: center;
+        letter-spacing: 0.6px;
+        line-height: 14px;
         padding-left: 15px;
         padding-right: 15px;
     }
     .main-top-button {
-        @include fontSpec(CoreSansGExtraBold, 12px);
+        @include fontSpec(FuturaPTDemi, 12px);
         color: $white-text-transparency;
         background-color: $blue-background-color;
         margin-top: 20px;

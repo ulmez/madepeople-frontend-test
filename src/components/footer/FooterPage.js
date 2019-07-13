@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import visaIcon from '../../icons/visa-icon.jpg';
-import masterCardIcon from '../../icons/mastercard-icon.jpg';
-import amexIcon from '../../icons/amex-icon.jpg';
-import paypalIcon from '../../icons/paypal-icon.jpg';
+import visaIcon from '../../icons/visa-icon.png';
+import masterCardIcon from '../../icons/mastercard-icon.png';
+import amexIcon from '../../icons/amex-icon.png';
+import paypalIcon from '../../icons/paypal-icon.png';
 
 class FooterPage extends Component {
     render() {

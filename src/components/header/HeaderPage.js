@@ -6,7 +6,9 @@ class HeaderPage extends Component {
             <header id="navbar">
                 <div className={"top-headline-container " + (this.props.activeMenu ? 'active-menu-design' : '')}>
                     <div className={"top-headline " + (this.props.activeMenu ? 'less-transparency bottom-border-transparency' : '')}>
-                        <div className="eton-headline-text">ETON</div>
+                        <div>
+                            <label className={this.props.activeMenu ? 'eton-icon-white' : 'eton-icon-black'}></label>
+                        </div>
                         <div className="shopping-basket-headline-text">
                             <label className={this.props.activeMenu ? 'briefcase-icon-white' : 'briefcase-icon-black'}></label>
                             <label>0 SEK</label>
@@ -14,7 +16,9 @@ class HeaderPage extends Component {
                     </div>
                 </div>
                 <div id="topSearchField" className={"top-search-field " + (this.props.activeMenu ? 'active-menu-design padding-top-fix transition-height-search-field' : 'start-height')}>
-                    <label><i className="fa fa-search"></i></label>
+                    <div>
+                        <label></label>
+                    </div>
                     <input id="searchBoxTextField" type="text" />
                 </div>
                 <div id="menuHeadlineContainer" className={"menu-headline " + (this.props.activeMenu ? 'active-menu-design less-transparency' : '')}>

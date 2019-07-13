@@ -12,8 +12,9 @@
     letter-spacing: $spacing;
 }
 
-@mixin element-color($color) {
+@mixin element-color($url, $color) {
+    display: inline-block;
     background-color: $color;
-    -webkit-mask-image: url(../icons/briefcase-icon.svg);
-    mask-image: url(../icons/briefcase-icon.svg);
+    -webkit-mask-image: url($url);
+    mask-image: url($url);
 }

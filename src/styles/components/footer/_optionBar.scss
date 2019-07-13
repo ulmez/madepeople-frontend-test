@@ -1,7 +1,7 @@
 .option-bar-container {
-    font-family: CoreSansGLight;
-    border-top: 2px solid $gray-border-color;
     @include position(center, center, row, 0);
+    @include fontSpec(FuturaPTBook, 14px, 0.3px);
+    border-top: 2px solid $gray-border-color;
     label {
         padding-left: 10px;
         padding-right: 10px;

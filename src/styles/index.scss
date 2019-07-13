@@ -7,10 +7,8 @@
 @import './components/footer/index';
 
 body {
-    font-family: CoreSansGExtraBold;
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin-top: 80px;
+    @include fontSpec(FuturaPTBold, 12px, 0);
+    margin-top: 75px;
 }
 
 input:focus {

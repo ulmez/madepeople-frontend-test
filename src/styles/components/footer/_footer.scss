@@ -1,8 +1,8 @@
 .footer-container {
-    border-top: 2px solid $gray-border-color;
     @include position(center, center, column, 0);
+    border-top: 2px solid $gray-border-color;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
     div {
         padding-bottom: 15px;
         img {
@@ -12,8 +12,8 @@
         }
     }
     label {
-        font-family: CoreSansGLight;
-        font-size: 10px;
+        font-family: FuturaPTLight;
+        font-size: 11px;
         color: $gray-footer-text;
     }
 }
